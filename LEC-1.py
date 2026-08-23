@@ -1,0 +1,5 @@
+print("Python is popular among both beginners and professionals because it is simple, readable, and versatile. Its clear syntax makes it easy for newcomers to learn programming concepts quickly, while its powerful libraries and frameworks allow professionals to build complex applications efficiently. This balance of accessibility and capability has made Python one of the most widely adopted languages worldwide.")
+print("Key Areas Where Python is Used")
+print("Web Development → Frameworks like Django and Flask power dynamic websites and applications.")
+print("Data Science → Libraries such as Pandas, NumPy, and TensorFlow make Python essential for analytics and machine learning.")
+print("Automation → Scripts and tools help automate repetitive tasks, saving time and effort.")
