@@ -9,3 +9,14 @@ class Student:
 
     def display_info(self):
         print(f"Name: {self.name}, Age: {self.age}, Grade: {self.grade}")
+# --- Subclass: Teacher (inherits Student) ---
+class Teacher(Student):
+    def __init__(self, name, age, grade, subject):
+        # Call parent constructor
+        super().__init__(name, age, grade)
+        self.subject = subject
+
+    def display_info(self):
+        # Extend parent method
+        super().display_info()
+        print(f"Subject: {self.subject}")
