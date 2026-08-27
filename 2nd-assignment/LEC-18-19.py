@@ -20,3 +20,15 @@ class Teacher(Student):
         # Extend parent method
         super().display_info()
         print(f"Subject: {self.subject}")
+# --- Main Execution ---
+# Create Student object
+student1 = Student("Zesshan", 25, "A+")
+print("Student Info:")
+student1.display_info()
+
+print("\n")
+
+# Create Teacher object
+teacher1 = Teacher("Anwar", 50, "20-grade", "COMPUTER-SCIENCE")
+print("Teacher Info:")
+teacher1.display_info()
