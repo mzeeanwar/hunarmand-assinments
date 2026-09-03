@@ -1,38 +1,71 @@
+# Program: Operators Demo
+
+# --- Arithmetic Operators ---
 a = 15
 b = 4
-print(a + b)   # Addition → 19
-print(a - b)   # Subtraction → 11
-print(a * b)   # Multiplication → 60
-print(a / b)   # Division → 3.75
-print(a % b)   # Modulus → 3
-print(a ** b)  # Exponentiation → 50625
-print(a // b)  # Floor division → 3
+print("Arithmetic Operators:")
+print("Addition:", a + b)
+print("Subtraction:", a - b)
+print("Multiplication:", a * b)
+print("Division:", a / b)
+print("Modulus:", a % b)
+print("Exponentiation:", a ** b)
+print("Floor Division:", a // b)
+
+print("\n")
+
+# --- Comparison Operators ---
 x = 10
 y = 20
-print(x == y)   # False
-print(x != y)   # True
-print(x > y)    # False
-print(x < y)    # True
-print(x >= 10)  # True
-print(y <= 20)  # True
+print("Comparison Operators:")
+print("x == y:", x == y)
+print("x != y:", x != y)
+print("x > y:", x > y)
+print("x < y:", x < y)
+print("x >= 10:", x >= 10)
+print("y <= 20:", y <= 20)
+
+print("\n")
+
+# --- Logical Operators ---
 p = True
 q = False
-print(p and q)   # False
-print(p or q)    # True
-print(not p)     # False
+print("Logical Operators:")
+print("p and q:", p and q)
+print("p or q:", p or q)
+print("not p:", not p)
+
+print("\n")
+
+# --- Assignment Operators ---
 num = 5
-num += 3   # num = num + 3 → 8
-num -= 2   # num = num - 2 → 6
-num *= 4   # num = num * 4 → 24
-num /= 6   # num = num / 6 → 4.0
-num %= 3   # num = num % 3 → 1.0
+print("Assignment Operators:")
+num += 3   # num = num + 3
+print("After += 3:", num)
+num -= 2   # num = num - 2
+print("After -= 2:", num)
+num *= 4   # num = num * 4
+print("After *= 4:", num)
+num /= 6   # num = num / 6
+print("After /= 6:", num)
+num %= 3   # num = num % 3
+print("After %= 3:", num)
+
+print("\n")
+
+# --- Bitwise Operators ---
 a = 6   # binary: 110
 b = 3   # binary: 011
-print(a & b)   # AND → 2 (010)
-print(a | b)   # OR  → 7 (111)
-print(a ^ b)   # XOR → 5 (101)
-print(~a)      # NOT → -7
-print(a << 1)  # Left shift → 12 (1100)
-print(a >> 1)  # Right shift → 3 (011)
+print("Bitwise Operators:")
+print("a & b:", a & b)   # AND
+print("a | b:", a | b)   # OR
+print("a ^ b:", a ^ b)   # XOR
+print("~a:", ~a)         # NOT
+print("a << 1:", a << 1) # Left shift
+print("a >> 1:", a >> 1) # Right shift
+
+print("\n")
+
+# --- Expression with Multiple Operators ---
 result = (10 + 5) * 2 > 20 and (4 | 1) == 5
-print(result)   # True
+print("Expression with multiple operators result:", result)
