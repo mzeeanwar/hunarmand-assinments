@@ -40,3 +40,22 @@ def update_student(name, new_age, new_grade):
         print("Student updated successfully!")
     else:
         print("Student not found.")
+# --- Function to delete student ---
+def delete_student(name):
+    if not os.path.exists(FILE_NAME):
+        print("No student records found.")
+        return
+    deleted = False
+    with open(FILE_NAME, "r") as f:
+        students = f.readlines()
+    with open(FILE_NAME, "w") as f:
+        for student in students:
+            s_name, s_age, s_grade = student.strip().split(",")
+            if s_name == name:
+                deleted = True
+                continue
+            f.write(student)
+    if deleted:
+        print("Student deleted successfully!")
+    else:
+        print("Student not found.")
